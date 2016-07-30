@@ -56,22 +56,6 @@ if (!function_exists('str_putcsv')) {
 
 /**
  *
- * Get field id from a field name from db
- *
- * @param string $field_name Field name to get id
- *
- * @return int field id
- */
-
-function get_field_id($field_name)
-{
-    return Capsule::table('tblcustomfields')->select('id')
-                                            ->where('fieldname', $field_name)
-                                            ->first();
-}
-
-/**
- *
  * Get modules configuration fields for hooks
  *
  * @param none

@@ -32,6 +32,12 @@ function tckimlik_config() {
                 "Size" => "25",
                 "Description" => "Yalnızca Türkiye adresli kullanıcılar için geçerli olsun",
             ),
+            "whmcs_admin_user" => array(
+                "FriendlyName" => "Admin kullanıcı adı",
+                "Type" => "text",
+                "Size" => 25,
+                "Description" => "WHMCS Admin kullanıcı adı (şifreleme için kullanılır)",
+            ),
         )
     );
     return $configarray;
