@@ -17,7 +17,7 @@ Repoyu clonelayacaksanız herhangi bir yere cloneladıktan sonra proje dizinine 
 
 ```
 # cd whmcs-tckimlik
-# mv tckimlik WHMCS_dizininiz/modules/addons
+# mv tckimlik WHMCS_dizininiz/modules/addons/.
 ```
 
 #### Son sürümü indirin (önerilen kurulum) ####
@@ -50,7 +50,7 @@ Clone the repo to anywhere you like and move the "tckimlik" directory to your WH
 
 ```
 # cd whmcs-tckimlik
-# mv tckimlik WHMCSroot/modules/addons
+# mv tckimlik WHMCSroot/modules/addons/.
 ```
 
 #### Downloading the latest release (Recommended!) ####
