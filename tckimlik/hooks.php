@@ -118,7 +118,7 @@ add_hook('ClientAreaPage', 1, function($vars) use ($tc_field, $birthyear_field, 
             $replace = 'disabled="disabled" />';
             $disabled_field = preg_replace($regex, $replace, $customfield["input"]);
             $return_value["customfields"][] = array(
-                "id" => $tc_field,
+                "id" => 999,
                 "textid" => $customfield["textid"],
                 "name" => $customfield["name"],
                 "description" => $customfield["description"],
@@ -128,6 +128,13 @@ add_hook('ClientAreaPage', 1, function($vars) use ($tc_field, $birthyear_field, 
                 "rawvalue" => $customfield["rawvalue"],
                 "required" => $customfield["required"],
                 "adminonly" => $customfield["adminonly"],
+            );
+
+            $hidden_value = '<input type="hidden" value="' . $customfield["value"] .
+                            '" name="customfield[' . $tc_field . ']" id="customfield' . $tc_field .
+                            '" />';
+            $return_value["customfields"][] = array(
+                "input" => $hidden_value,
             );
         } elseif ($customfield["id"] == $birthyear_field && $customfield["input"] != NULL) {
             $regex = '/^<select/';
@@ -144,6 +151,13 @@ add_hook('ClientAreaPage', 1, function($vars) use ($tc_field, $birthyear_field, 
                 "rawvalue" => $customfield["rawvalue"],
                 "required" => $customfield["required"],
                 "adminonly" => $customfield["adminonly"],
+            );
+
+            $hidden_value = '<input type="hidden" value="' . $customfield["value"] .
+                            '" name="customfield[' . $birthyear_field . ']" id="customfield' . $birthyear_field .
+                            '" />';
+            $return_value["customfields"][] = array(
+                "input" => $hidden_value,
             );
         } else {
             $return_value["customfields"][] = $customfield;
