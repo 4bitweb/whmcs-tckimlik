@@ -118,7 +118,7 @@ add_hook('ClientAreaPage', 1, function($vars) use ($tc_field, $birthyear_field, 
             $replace = 'disabled="disabled" />';
             $disabled_field = preg_replace($regex, $replace, $customfield["input"]);
             $return_value["customfields"][] = array(
-                "id" => $birthyear_field,
+                "id" => $tc_field,
                 "textid" => $customfield["textid"],
                 "name" => $customfield["name"],
                 "description" => $customfield["description"],
