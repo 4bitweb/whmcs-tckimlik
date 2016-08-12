@@ -10,7 +10,7 @@ WHMCS için T.C. Kimlik numarası doğrulama modülü
 WHMCS'nin minimum gereksinimlerini görmek için http://docs.whmcs.com/System_Requirements adresine göz atabilirsiniz.
 
 ## Kurulum ##
-Projeyi herhangi bir yere clonelayabilir ya da GitHub üzerinden son sürümü indirebilirsiniz. Sürümler için [releases](https://github.com/4bitweb/whmcs-iyzipay-tokenized/releases) sayfasına göz atın.
+Projeyi herhangi bir yere clonelayabilir ya da GitHub üzerinden son sürümü indirebilirsiniz. Sürümler için [releases](https://github.com/4bitweb/whmcs-tckimlik/releases) sayfasına göz atın.
 
 #### Clone ####
 Repoyu clonelayacaksanız herhangi bir yere cloneladıktan sonra proje dizinine gidip tckimlik klasörünü WHMCS_dizininiz/modules/addons dizini içerisine taşımalısınız;
