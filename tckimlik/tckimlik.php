@@ -11,7 +11,7 @@ function tckimlik_config() {
     $configarray = array(
     "name" => "TC Kimlik No Dogrulama",
     "description" => "An addon for Turkish Identification Number validation",
-    "version" => "1.0",
+    "version" => "1.0.2",
     "author" => "4-bit Developers",
         "fields" => array(
             "tc_field" => array(

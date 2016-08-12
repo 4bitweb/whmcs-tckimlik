@@ -18,7 +18,7 @@ add_hook('ClientDetailsValidation', 1, function ($vars) use ($tc_field, $birthye
     $error = [];
 
     // Only on registration
-    if ($vars["SCRIPT_NAME"] != "/cart.php" || $vars["SCRIPT_NAME"] != "/register.php")
+    if (isset($vars["save"]))
     {
         return;
     }
