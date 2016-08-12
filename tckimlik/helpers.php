@@ -15,6 +15,29 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 
 /**
  *
+ * Get firstname and lastname details from DB using user email
+ *
+ * @param $email string user email
+ *
+ * @return array firstname and lastname keys with first/lastname values
+ */
+
+function find_user_details($email)
+{
+    $retArr = [];
+    $details = Capsule::table('tblclients')
+                ->select('firstname', 'lastname')
+                ->where('email', $email)
+                ->first();
+
+    $retArr["firstname"] = $details->firstname;
+    $retArr["lastname"] = $details->lastname;
+
+    return $retArr;
+}
+
+/**
+ *
  * Get all custom field names and ids from database
  *
  * @param none
