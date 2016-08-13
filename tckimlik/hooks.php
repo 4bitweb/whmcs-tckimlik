@@ -13,7 +13,7 @@ $birthyear_field = $conf["birthyear_field"];
 $country_check = $conf["only_turkish"];
 $admin_user = $conf["whmcs_admin_user"];
 
-add_hook('ClientDetailsValidation', 1, function ($vars) use ($tc_field, $birthyear_field, $country_check, $templatefile)
+add_hook('ClientDetailsValidation', 1, function ($vars) use ($tc_field, $birthyear_field, $country_check)
 {
     if ($_SERVER["SCRIPT_NAME"] == '/creditcard.php')
     {
